@@ -1,0 +1,102 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+#root{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+}
+
+.table td, .table th{
+  border: 2px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th{
+  cursor: pointer;
+}
+
+.table-container{
+  width: 80vw;
+}
+
+.tableWrapper{
+  overflow: auto;
+}
+
+.ham{
+  height: 23px;
+}
+
+.forMobile,.forMobileHamburgerMenu{
+  display: none;
+}
+
+
+
+.forDesktop{
+  display: block;
+}
+
+.firstSection{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #ddd;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.pagination{
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstSection>div{
+ font-weight: bolder;
+}
+
+.table{
+  width: 100%;
+}
+
+input,select{
+  padding: 5px;
+}
+
+.dataTable{
+ display: flex;
+ align-items: center;
+}
+
+.btn{
+  margin-top: 5px;
+  background: #ddd;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width:500px) {
+  .forMobileHamburgerMenu{
+    display: block;
+  }
+
+  .forDesktop{
+    display: none;
+  }
+
+  .forMobile{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+}
